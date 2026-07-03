@@ -69,6 +69,14 @@
 
     <link rel="stylesheet" href="./styles.css?v=1.0">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' fill='%23d4af37'>⚖️</text></svg>">
+    <style>
+        .profile-image img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            border-radius: 50% !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Scroll Progress Bar -->
@@ -169,10 +177,7 @@
                     <div class="profile-image">
                         <img src="dev_pic.png.jpg" 
                              alt="Kamran Abro - Advocate at Abro Law Firm" 
-                             loading="eager"
-                             width="320" 
-                             height="360"
-                             style="border-radius: 50%; object-fit: cover; max-width: 100%; height: auto;">
+                             loading="eager">
                         <div class="image-fallback" style="display:none;">👨‍⚖️</div>
                     </div>
                 </div>
