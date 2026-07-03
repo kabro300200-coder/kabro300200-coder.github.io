@@ -1,0 +1,32 @@
+# Robots.txt for Kamran Abro's Portfolio
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: *.json
+Disallow: *.xml
+
+# Google Search Console
+Allow: /sitemap.xml
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Google Bot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Bot specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bad bots (block them)
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://kabro300200-coder.github.io/sitemap.xml
