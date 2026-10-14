@@ -34,6 +34,29 @@
     box-shadow: 0 20px 40px rgba(212,175,55,0.12);
 }
 
+.case-card h3,
+.lawyer-card h3 {
+    font-size: 1.45rem;
+    color: var(--primary-gold);
+    margin-bottom: 0.9rem;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.case-card h4 {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin: 1rem 0 0.6rem;
+    font-weight: 700;
+}
+
+.case-card p,
+.lawyer-card p {
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
 .case-meta {
     font-size: 0.95rem;
     color: #bfc7ce;
@@ -103,12 +126,6 @@
     border: 1px solid rgba(212,175,55,0.12);
     border-radius: 999px;
     padding: 0.35rem 0.7rem;
-}
-
-.lawyer-card p {
-    color: var(--text-muted);
-    line-height: 1.75;
-    margin-bottom: 1rem;
 }
 
 .lawyer-tags {
