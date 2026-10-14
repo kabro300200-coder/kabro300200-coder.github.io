@@ -6,8 +6,8 @@
 
     <!-- Primary SEO -->
     <title>Kamran Abro Adv | Abro Law Firm - Advocate Quetta, Balochistan</title>
-    <meta name="description" content="Kamran Abro Adv - Advocate at Abro Law Firm (International Law Firm & Consultancy), Quetta, Balochistan. Legal Expert, Legal Educator, and Tech Innovator build[...]
-    <meta name="keywords" content="Kamran Abro, Abro Law Firm, International Law Firm & Consultancy, Advocate Quetta, Advocate Balochistan, Balochistan Bar Council, Quetta District Courts, legal c[...]
+    <meta name="description" content="Kamran Abro Adv - Advocate at Abro Law Firm (International Law Firm & Consultancy), Quetta, Balochistan. Legal Expert, Legal Educator, and Tech Innovator build[...]">
+    <meta name="keywords" content="Kamran Abro, Abro Law Firm, International Law Firm & Consultancy, Advocate Quetta, Advocate Balochistan, Balochistan Bar Council, Quetta District Courts, legal c[...]">
     <meta name="author" content="Kamran Abro">
     <meta name="theme-color" content="#0a0e0f">
     <meta name="robots" content="index, follow">
@@ -17,7 +17,7 @@
 
     <!-- Open Graph / Social -->
     <meta property="og:title" content="Kamran Abro Adv | Abro Law Firm - Advocate Quetta, Balochistan">
-    <meta property="og:description" content="Kamran Abro Adv - Advocate at Abro Law Firm (International Law Firm & Consultancy), Quetta, Balochistan. Legal Expert, Legal Educator, and Tech Innovat[...]
+    <meta property="og:description" content="Kamran Abro Adv - Advocate at Abro Law Firm (International Law Firm & Consultancy), Quetta, Balochistan. Legal Expert, Legal Educator, and Tech Innovat[...]">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kabro300200-coder.github.io/">
     <meta property="og:image" content="https://raw.githubusercontent.com/kabro300200-coder/kabro300200-coder.github.io/main/dev_pic.png.jpg">
@@ -80,6 +80,11 @@
             object-fit: cover !important;
             border-radius: 50% !important;
         }
+        /* Case study and lawyer cards quick layout adjustments */
+        .case-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+        .case-card, .lawyer-card { background: rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.08); padding: 1rem; border-radius: 10px; }
+        .case-meta { font-size: 0.95rem; color: #bfc7ce; }
+        .verify-note { font-size: 0.85rem; color: #ffdd57; }
     </style>
 </head>
 <body>
@@ -96,7 +101,9 @@
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
+                <li><a href="#lawyers" class="nav-link">Our Lawyers</a></li>
+                <li><a href="#practice-areas" class="nav-link">Practice Areas</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -189,37 +196,152 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section class="education" id="education">
+    <!-- Case Studies Section -->
+    <section class="case-studies" id="case-studies">
         <div class="container">
-            <h2 class="section-title"><span>Education & Credentials</span></h2>
+            <h2 class="section-title"><span>Case Studies & Recent Matters</span></h2>
 
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2023</div>
-                    <div class="timeline-content">
-                        <h4>BS LLB (Hons) in Law</h4>
-                        <p>Comprehensive law degree with specialization in Criminal Law and Constitutional Law. Advanced studies in legal theory, jurisprudence, legal practice, and professional e[...]
-                        <span class="degree-badge">Law Graduate</span>
+            <p class="section-subtitle">Selected, draft case summaries prepared for public information. All facts and outcomes are subject to documentary verification before formal publication.</p>
+
+            <div class="case-grid">
+                <!-- CASE STUDY 1: State v. Shah Muhammad -->
+                <article class="case-card">
+                    <h3>State v. Shah Muhammad</h3>
+                    <div class="case-meta">
+                        <strong>Practice Area:</strong> Criminal Defence &nbsp;|&nbsp; <strong>Legal Provisions:</strong> Sections 324 & 34 PPC
                     </div>
+                    <p class="case-meta"><strong>FIR Registration Date:</strong> 19 August 2026 &nbsp;|&nbsp; <strong>Bail After Arrest:</strong> 10 September 2026</p>
+
+                    <h4>Brief factual background</h4>
+                    <p>
+                        According to information provided to the chamber, the complainant (reported to be a former wife) alleged that the accused fired a gunshot at her leg and that she was transported in a vehicle to Sajawal Abad. The FIR was registered at Hazara Town Police Station, Quetta. These facts are published here as provided by the client and are marked for verification.
+                    </p>
+
+                    <h4>Legal assistance provided</h4>
+                    <p>
+                        The chamber provided legal representation in pursuing bail after arrest in proceedings arising from allegations under Sections 324 and 34 of the Pakistan Penal Code. Representation included case assessment, drafting of bail application, and court attendance as required.
+                    </p>
+
+                    <h4>Verified procedural outcome</h4>
+                    <p><strong>Outcome:</strong> Bail After Arrest Obtained. (Subject to verification of the court order.)</p>
+
+                    <p class="verify-note">Verification required before wider publication: FIR copy, court bail order, court name, and identity of counsel who represented the client in court.</p>
+                </article>
+
+                <!-- CASE STUDY 2: Muhammad Ali Waqas -->
+                <article class="case-card">
+                    <h3>Muhammad Ali Waqas — Bank Account Freezing Matter</h3>
+                    <div class="case-meta">
+                        <strong>Practice Area:</strong> Financial & Regulatory Legal Assistance &nbsp;|&nbsp; <strong>Agency:</strong> Federal Investigation Agency (FIA), Islamabad
+                    </div>
+                    <p class="case-meta"><strong>Account Freezing Date:</strong> 23 November 2025 &nbsp;|&nbsp; <strong>Inquiry Reference:</strong> No. 250/2025 (subject to verification)</p>
+
+                    <h4>Brief factual background</h4>
+                    <p>
+                        Information supplied to the chamber indicates that a bank account belonging to the client was frozen in connection with an FIA inquiry. Advocate Kamran Abro attended proceedings and provided legal assistance in relation to the inquiry and banking restriction. These facts remain as provided by the client and require documentary confirmation.
+                    </p>
+
+                    <h4>Legal assistance provided</h4>
+                    <p>
+                        The chamber assisted the client by attending relevant hearings, preparing submissions, and liaising with banking authorities where appropriate to pursue the release of the account restriction.
+                    </p>
+
+                    <h4>Verified procedural outcome</h4>
+                    <p><strong>Reported outcome:</strong> Bank Account Defreezing — Outcome Reported; Supporting Record to Be Verified.</p>
+
+                    <p class="verify-note">Verification required before wider publication: FIA inquiry reference in official format, bank confirmation or written court order confirming defreezing, and exact dates and counsel of record.</p>
+                </article>
+            </div>
+
+            <p style="margin-top:1rem; font-size:0.95rem; color:#bfc7ce;">Note: The publication of case details is done in accordance with professional obligations. Allegations are presented as such and not as proven facts. Do not rely on these summaries as legal advice.</p>
+        </div>
+    </section>
+
+    <!-- Our Lawyers Section -->
+    <section class="lawyers" id="lawyers">
+        <div class="container">
+            <h2 class="section-title"><span>Our Lawyers</span></h2>
+
+            <p class="section-subtitle">Profiles of the Abro Law Chamber legal team. Please verify the listed experience and designations before final publication.</p>
+
+            <div class="case-grid">
+                <div class="lawyer-card">
+                    <h3>Advocate Kamran Abro</h3>
+                    <p class="case-meta"><strong>Designation:</strong> Advocate &nbsp;|&nbsp; <strong>Reported experience:</strong> 4 years (verify)</p>
+                    <p>Practice areas: Criminal law, civil disputes, narcotics-related matters, service law, and financial/regulatory assistance. Services include legal research, drafting, bail representation, and court appearances.</p>
+                    <a href="#contact" class="btn btn-secondary">View Profile</a>
+                    <p class="verify-note">Profile facts to verify: years of practice, bar enrolment, and formal qualifications.</p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - Present</div>
-                    <div class="timeline-content">
-                        <h4>Master's in International Relations</h4>
-                        <p>Advanced studies in international law, diplomacy, global governance, and cross-border legal matters. Exploring international cooperation frameworks and their applicatio[...]
-                        <span class="degree-badge">Higher Education</span>
-                    </div>
+                <div class="lawyer-card">
+                    <h3>Advocate Mujtaba Lashari</h3>
+                    <p class="case-meta"><strong>Designation:</strong> Advocate, High Court of Balochistan &nbsp;|&nbsp; <strong>Reported experience:</strong> 7 years (verify)</p>
+                    <p>Practice areas: Criminal law, civil litigation, narcotics matters, and service law. Provides litigation strategy, drafting, and representation before the High Court.</p>
+                    <a href="#contact" class="btn btn-secondary">View Profile</a>
+                    <p class="verify-note">Profile facts to verify: High Court enrolment and years of practice.</p>
                 </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-date">Ongoing</div>
-                    <div class="timeline-content">
-                        <h4>Technology & App Development</h4>
-                        <p>Continuous professional development in Android development, web technologies, Firebase integration, and educational technology solutions. Specialized in building scalab[...]
-                        <span class="degree-badge">Tech Skills</span>
-                    </div>
+                <div class="lawyer-card">
+                    <h3>Advocate Adnan Abro</h3>
+                    <p class="case-meta"><strong>Designation:</strong> Advocate</p>
+                    <p>Contributes to case preparation and representation. Displayed information is limited to verified professional details only.</p>
+                    <a href="#contact" class="btn btn-secondary">View Profile</a>
+                </div>
+
+                <div class="lawyer-card">
+                    <h3>Advocate Mohsin Mostoi</h3>
+                    <p class="case-meta"><strong>Designation:</strong> Advocate (confirm exact designation before publication)</p>
+                    <p>Professional support in legal matters handled by the chamber. Verify designation and experience before publishing.</p>
+                    <a href="#contact" class="btn btn-secondary">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas Section -->
+    <section class="practice-areas" id="practice-areas">
+        <div class="container">
+            <h2 class="section-title"><span>Practice Areas</span></h2>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>1. Criminal Law & Criminal Defence</h3>
+                    <p>Representation in criminal proceedings, bail applications, and strategic defence planning. We do not promise outcomes and every matter is judged on its facts and applicable law.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>2. Bail After Arrest and Pre-Arrest Bail</h3>
+                    <p>Assistance with bail after arrest and pre-arrest bail applications, including drafting, filing, and court attendance. Outcomes depend on case facts and judicial discretion.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>3. Civil Litigation and Property Disputes</h3>
+                    <p>Representation in civil suits, property matters, injunctions, and related court procedures.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>4. Control of Narcotic Substances (CNS) Cases</h3>
+                    <p>Legal defence and representation in matters under the Control of Narcotic Substances Act and related regulations.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>5. Service Matters and Service Tribunal Litigation</h3>
+                    <p>Representation before service tribunals and administrative bodies in employment and service-related disputes.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>6. Legal Drafting and Court Applications</h3>
+                    <p>Preparation of petitions, applications, notices, and other court documents, delivered with careful legal research and compliance with procedural rules.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>7. Financial and Regulatory Legal Assistance</h3>
+                    <p>Assistance in banking, regulatory inquiries, and liaison with investigative agencies. We do not claim that assistance will close an inquiry unless documentary evidence confirms that result.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>8. Legal Consultation and Case Assessment</h3>
+                    <p>Initial case assessments, legal strategy sessions, and ongoing advisory support tailored to client needs.</p>
                 </div>
             </div>
         </div>
@@ -231,7 +353,7 @@
             <h2 class="section-title"><span>Featured Projects & Apps</span></h2>
 
             <div class="projects-grid">
-                <!-- Law GAT MCQs -->
+                <!-- existing project cards unchanged -->
                 <div class="project-card">
                     <div class="project-icon" aria-hidden="true">📚</div>
                     <h3>Law-GAT MCQs</h3>
@@ -255,7 +377,6 @@
                     </a>
                 </div>
 
-                <!-- Future Dr. MDCAT -->
                 <div class="project-card">
                     <div class="project-icon" aria-hidden="true">🏥</div>
                     <h3>Future Dr. (MDCAT)</h3>
@@ -279,7 +400,6 @@
                     </a>
                 </div>
 
-                <!-- Portfolio Website -->
                 <div class="project-card">
                     <div class="project-icon" aria-hidden="true">🌐</div>
                     <h3>Premium Portfolio Website</h3>
@@ -402,7 +522,7 @@
                     <p>Call or message me anytime</p>
                     <a href="tel:+923357300200" class="contact-link">+92 335 7300200</a>
                     <br>
-                    <a href="https://wa.me/923357300200" class="contact-link" target="_blank" rel="noopener noreferrer" style="margin-top: 0.8rem; display: inline-block;" aria-label="Chat on What[...]
+                    <a href="https://wa.me/923357300200" class="contact-link" target="_blank" rel="noopener noreferrer" style="margin-top: 0.8rem; display: inline-block;" aria-label="Chat on What[...]">WhatsApp</a>
                 </div>
 
                 <div class="contact-card">
@@ -415,15 +535,19 @@
                 <div class="contact-card">
                     <div class="contact-icon" aria-hidden="true">📍</div>
                     <h3>Location</h3>
-                    <p>Based in Pakistan</p>
-                    <p class="contact-link">Quetta, Balochistan, Pakistan</p>
+                    <p>Abro Law Chamber</p>
+                    <p class="contact-link">Mini Bypass, Dera Murad Jamali, Balochistan, Pakistan</p>
+                    <p class="verify-note">Office location and map pin must be verified before publishing a map or precise directions.</p>
                 </div>
             </div>
 
             <div class="contact-cta">
-                <p>Interested in collaboration, legal consultation, or have questions about my work?</p>
+                <p>Contact Abro Law Chamber for Professional Legal Assistance.</p>
                 <a href="mailto:kabro300200@gmail.com" class="btn btn-primary" aria-label="Send Me an Email">Send Me an Email</a>
             </div>
+
+            <!-- Administrator notes: Case management and date handling -->
+            <!-- NOTE FOR ADMIN: This static site has no backend CMS. To implement structured case-entry fields, dates, publish/unpublish, and verification workflow you will need a backend or a headless CMS (Firebase, Netlify CMS, or a custom API). -->
         </div>
     </section>
 
@@ -442,7 +566,9 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#lawyers">Our Lawyers</a></li>
+                        <li><a href="#practice-areas">Practice Areas</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contact">Contact</a></li>
